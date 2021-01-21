@@ -22,6 +22,7 @@ export async function getStaticPaths() {
 }
 
 export default function Post({ postData }) {
+  console.log(postData)
   return (
     <Layout>
       <Head>
@@ -31,6 +32,7 @@ export default function Post({ postData }) {
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
+          <p>{postData.author}</p>
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>

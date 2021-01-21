@@ -43,6 +43,13 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
+      <div id="01">
+            test
+      </div>
+      <section id="02">
+            test
+      </section>
+
     </Layout>
   )
 }
